@@ -8,13 +8,13 @@ To use this class, copy the class header files, or include the class in your Coc
 
 ### Podfile inclusion
 
-```
+```ruby
 pod 'UIDeviceIdentifier', :git => 'https://github.com/cabbiepete/UIDeviceIdentifier.git'
 ```
 
+### Code usage
 
-
-``` 
+```objective-c
 #import <UIDeviceIdentifier/UIDeviceHardware.h>
 
 @implementation MyClass 
