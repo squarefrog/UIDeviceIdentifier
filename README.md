@@ -1,5 +1,5 @@
 # Description
-UIDeviceHardware is a class originally created in a [gist](https://gist.github.com/1323251) by [Jaybles](https://github.com/Jaybles). It allows querying of the current users device, and returns a human formatted string. 
+UIDeviceHardware is a class originally created in a [gist](https://gist.github.com/1323251) by [Jaybles](https://github.com/Jaybles). It allows querying of the current users device, and returns a human formatted string.
 
 It is written as a class method, to allow use without direct instantiation.
 
@@ -23,7 +23,7 @@ pod 'UIDeviceIdentifier', :git => 'https://github.com/cabbiepete/UIDeviceIdentif
 {
 
     NSString *platformString = [UIDeviceHardware platformString];
-NSString *currentDevice = [UIDeviceHardware platformString];
+    NSString *currentDevice = [UIDeviceHardware platformString];
 }
 
 @end
