@@ -23,7 +23,7 @@ pod 'UIDeviceIdentifier', :git => 'https://github.com/squarefrog/UIDeviceIdentif
 {
 
     NSString *platformString = [UIDeviceHardware platformString];
-    NSString *currentDevice = [UIDeviceHardware platformString];
+    NSString *currentDevice = [UIDeviceHardware platform];
 }
 
 @end
