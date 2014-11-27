@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UIDeviceIdentifier"
-  s.version      = "0.4.3"
+  s.version      = "0.4.4"
   s.summary      = "UIDeviceHardware is a class which allows querying of the current users device, and returns a human formatted string."
   s.homepage     = "https://github.com/squarefrog/UIDeviceIdentifier"
   s.license      = 'MIT'
