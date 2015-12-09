@@ -23,4 +23,10 @@
  */
 + (NSString *) platformString;
 
+/**
+ * The human readable platform string Simple. For example, `iPhone 5C`, `iPad 3`, `iPod Touch 5G`.
+ * @return The current devices platform string in a human readable format
+ */
++ (NSString *) platformStringSimple;
+
 @end
