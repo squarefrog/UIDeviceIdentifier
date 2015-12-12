@@ -84,4 +84,15 @@
     return platform;
 }
 
++ (NSString *) platformStringSimple
+{
+    NSString *platformString = [self platformString];
+    
+    NSRange range = [platformString rangeOfString:@"("];
+    if (range.length)
+        return [platformString substringToIndex:range.location - 1];
+    
+    return platformString;
+}
+
 @end
