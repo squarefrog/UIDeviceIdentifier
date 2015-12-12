@@ -78,6 +78,11 @@
     if ([platform isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (WiFi/Cellular)";
     if ([platform isEqualToString:@"iPad6,7"])      return @"iPad Pro (WiFi)";
     if ([platform isEqualToString:@"iPad6,8"])      return @"iPad Pro (WiFi/Cellular)";
+    if ([platform isEqualToString:@"AppleTV1,1"])   return @"Apple TV 1G";
+    if ([platform isEqualToString:@"AppleTV2,1"])   return @"Apple TV 2G";
+    if ([platform isEqualToString:@"AppleTV3,1"])   return @"Apple TV 3G";
+    if ([platform isEqualToString:@"AppleTV3,2"])   return @"Apple TV 3G";
+    if ([platform isEqualToString:@"AppleTV5,3"])   return @"Apple TV 4G";
     if ([platform isEqualToString:@"i386"])         return @"Simulator";
     if ([platform isEqualToString:@"x86_64"])       return @"Simulator";
 
