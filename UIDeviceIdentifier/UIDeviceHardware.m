@@ -27,61 +27,68 @@
 {
     NSString *platform = [self platform];
 
-    if ([platform isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
-    if ([platform isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
-    if ([platform isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
-    if ([platform isEqualToString:@"iPhone3,1"])    return @"iPhone 4 (GSM)";
-    if ([platform isEqualToString:@"iPhone3,2"])    return @"iPhone 4 (GSM Rev A)";
-    if ([platform isEqualToString:@"iPhone3,3"])    return @"iPhone 4 (CDMA)";
-    if ([platform isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
-    if ([platform isEqualToString:@"iPhone5,1"])    return @"iPhone 5 (GSM)";
-    if ([platform isEqualToString:@"iPhone5,2"])    return @"iPhone 5 (GSM+CDMA)";
-    if ([platform isEqualToString:@"iPhone5,3"])    return @"iPhone 5C (GSM)";
-    if ([platform isEqualToString:@"iPhone5,4"])    return @"iPhone 5C (GSM+CDMA)";
-    if ([platform isEqualToString:@"iPhone6,1"])    return @"iPhone 5S (GSM)";
-    if ([platform isEqualToString:@"iPhone6,2"])    return @"iPhone 5S (GSM+CDMA)";
-    if ([platform isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
-    if ([platform isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
-    if ([platform isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
-    if ([platform isEqualToString:@"iPhone8,2"])    return @"iPhone 6s Plus";
-    if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
-    if ([platform isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
-    if ([platform isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
-    if ([platform isEqualToString:@"iPod4,1"])      return @"iPod Touch 4G";
-    if ([platform isEqualToString:@"iPod5,1"])      return @"iPod Touch 5G";
-    if ([platform isEqualToString:@"iPod7,1"])      return @"iPod Touch 6G";
-    if ([platform isEqualToString:@"iPad1,1"])      return @"iPad 1";
-    if ([platform isEqualToString:@"iPad2,1"])      return @"iPad 2 (WiFi)";
-    if ([platform isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
-    if ([platform isEqualToString:@"iPad2,3"])      return @"iPad 2 (CDMA)";
-    if ([platform isEqualToString:@"iPad2,4"])      return @"iPad 2";
-    if ([platform isEqualToString:@"iPad2,5"])      return @"iPad Mini (WiFi)";
-    if ([platform isEqualToString:@"iPad2,6"])      return @"iPad Mini (GSM)";
-    if ([platform isEqualToString:@"iPad2,7"])      return @"iPad Mini (GSM+CDMA)";
-    if ([platform isEqualToString:@"iPad3,1"])      return @"iPad 3 (WiFi)";
-    if ([platform isEqualToString:@"iPad3,2"])      return @"iPad 3 (GSM+CDMA)";
-    if ([platform isEqualToString:@"iPad3,3"])      return @"iPad 3 (GSM)";
-    if ([platform isEqualToString:@"iPad3,4"])      return @"iPad 4 (WiFi)";
-    if ([platform isEqualToString:@"iPad3,5"])      return @"iPad 4 (GSM)";
-    if ([platform isEqualToString:@"iPad3,6"])      return @"iPad 4 (GSM+CDMA)";
-    if ([platform isEqualToString:@"iPad4,1"])      return @"iPad Air (WiFi)";
-    if ([platform isEqualToString:@"iPad4,2"])      return @"iPad Air (WiFi/Cellular)";
-    if ([platform isEqualToString:@"iPad4,3"])      return @"iPad Air (China)";
-    if ([platform isEqualToString:@"iPad4,4"])      return @"iPad Mini Retina (WiFi)";
-    if ([platform isEqualToString:@"iPad4,5"])      return @"iPad Mini Retina (WiFi/Cellular)";
-    if ([platform isEqualToString:@"iPad4,6"])      return @"iPad Mini Retina (China)";
-    if ([platform isEqualToString:@"iPad4,7"])      return @"iPad Mini 3 (WiFi)";
-    if ([platform isEqualToString:@"iPad4,8"])      return @"iPad Mini 3 (WiFi/Cellular)";
-    if ([platform isEqualToString:@"iPad5,1"])      return @"iPad Mini 4 (WiFi)";
-    if ([platform isEqualToString:@"iPad5,2"])      return @"iPad Mini 4 (WiFi/Cellular)";
-    if ([platform isEqualToString:@"iPad5,3"])      return @"iPad Air 2 (WiFi)";
-    if ([platform isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (WiFi/Cellular)";
-    if ([platform isEqualToString:@"iPad6,7"])      return @"iPad Pro (WiFi)";
-    if ([platform isEqualToString:@"iPad6,8"])      return @"iPad Pro (WiFi/Cellular)";
-    if ([platform isEqualToString:@"i386"])         return @"Simulator";
-    if ([platform isEqualToString:@"x86_64"])       return @"Simulator";
-
-    return platform;
+    static const NSDictionary *platformStrings;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        platformStrings = @
+        {
+            @"iPhone1,1": @"iPhone 1G",
+            @"iPhone1,2": @"iPhone 3G",
+            @"iPhone2,1": @"iPhone 3GS",
+            @"iPhone3,1": @"iPhone 4 (GSM)",
+            @"iPhone3,2": @"iPhone 4 (GSM Rev A)",
+            @"iPhone3,3": @"iPhone 4 (CDMA)",
+            @"iPhone4,1": @"iPhone 4S",
+            @"iPhone5,1": @"iPhone 5 (GSM)",
+            @"iPhone5,2": @"iPhone 5 (GSM+CDMA)",
+            @"iPhone5,3": @"iPhone 5C (GSM)",
+            @"iPhone5,4": @"iPhone 5C (GSM+CDMA)",
+            @"iPhone6,1": @"iPhone 5S (GSM)",
+            @"iPhone6,2": @"iPhone 5S (GSM+CDMA)",
+            @"iPhone7,1": @"iPhone 6 Plus",
+            @"iPhone7,2": @"iPhone 6",
+            @"iPhone8,1": @"iPhone 6s",
+            @"iPhone8,2": @"iPhone 6s Plus",
+            @"iPod1,1": @"iPod Touch 1G",
+            @"iPod2,1": @"iPod Touch 2G",
+            @"iPod3,1": @"iPod Touch 3G",
+            @"iPod4,1": @"iPod Touch 4G",
+            @"iPod5,1": @"iPod Touch 5G",
+            @"iPod7,1": @"iPod Touch 6G",
+            @"iPad1,1": @"iPad 1",
+            @"iPad2,1": @"iPad 2 (WiFi)",
+            @"iPad2,2": @"iPad 2 (GSM)",
+            @"iPad2,3": @"iPad 2 (CDMA)",
+            @"iPad2,4": @"iPad 2",
+            @"iPad2,5": @"iPad Mini (WiFi)",
+            @"iPad2,6": @"iPad Mini (GSM)",
+            @"iPad2,7": @"iPad Mini (GSM+CDMA)",
+            @"iPad3,1": @"iPad 3 (WiFi)",
+            @"iPad3,2": @"iPad 3 (GSM+CDMA)",
+            @"iPad3,3": @"iPad 3 (GSM)",
+            @"iPad3,4": @"iPad 4 (WiFi)",
+            @"iPad3,5": @"iPad 4 (GSM)",
+            @"iPad3,6": @"iPad 4 (GSM+CDMA)",
+            @"iPad4,1": @"iPad Air (WiFi)",
+            @"iPad4,2": @"iPad Air (WiFi/Cellular)",
+            @"iPad4,3": @"iPad Air (China)",
+            @"iPad4,4": @"iPad Mini Retina (WiFi)",
+            @"iPad4,5": @"iPad Mini Retina (WiFi/Cellular)",
+            @"iPad4,6": @"iPad Mini Retina (China)",
+            @"iPad4,7": @"iPad Mini 3 (WiFi)",
+            @"iPad4,8": @"iPad Mini 3 (WiFi/Cellular)",
+            @"iPad5,1": @"iPad Mini 4 (WiFi)",
+            @"iPad5,2": @"iPad Mini 4 (WiFi/Cellular)",
+            @"iPad5,3": @"iPad Air 2 (WiFi)",
+            @"iPad5,4": @"iPad Air 2 (WiFi/Cellular)",
+            @"iPad6,7": @"iPad Pro (WiFi)",
+            @"iPad6,8": @"iPad Pro (WiFi/Cellular)",
+            @"i386": @"Simulator",
+            @"x86_64": @"Simulator",
+        };
+    });
+    
+    return platformStrings[platform] ?: platform;
 }
 
 + (NSString *) platformStringSimple
