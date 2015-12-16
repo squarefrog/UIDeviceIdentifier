@@ -7,6 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
+#ifdef NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
+#endif
+
 /** UIDeviceHardware as a simple class to allow fetching model descriptions from an iOS device
  */
 @interface UIDeviceHardware : NSObject 
@@ -30,3 +34,7 @@
 + (NSString *) platformStringSimple;
 
 @end
+
+#ifdef NS_ASSUME_NONNULL_END
+NS_ASSUME_NONNULL_END
+#endif
