@@ -31,6 +31,7 @@
     dispatch_once(&onceToken, ^{
         platformStrings = @
         {
+#if !defined(TARGET_OS_IOS) || TARGET_OS_IOS
             @"iPhone1,1": @"iPhone 1G",
             @"iPhone1,2": @"iPhone 3G",
             @"iPhone2,1": @"iPhone 3GS",
@@ -82,11 +83,17 @@
             @"iPad5,4": @"iPad Air 2 (WiFi/Cellular)",
             @"iPad6,7": @"iPad Pro (WiFi)",
             @"iPad6,8": @"iPad Pro (WiFi/Cellular)",
+#endif
+#if TARGET_OS_TV
+            @"AppleTV5,3": @"Apple TV 4G",
+#endif
+#if !defined(TARGET_OS_SIMULATOR) || TARGET_OS_SIMULATOR
             @"i386": @"Simulator",
             @"x86_64": @"Simulator",
+#endif
         };
     });
-    
+
     return platformStrings[platform] ?: platform;
 }
 
