@@ -1,0 +1,14 @@
+PODS:
+  - UIDeviceIdentifier (1.0.1)
+
+DEPENDENCIES:
+  - UIDeviceIdentifier (from `../`)
+
+EXTERNAL SOURCES:
+  UIDeviceIdentifier:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIDeviceIdentifier: 0baf4b37264b56f45f547eecb6f438824e1a691f
+
+COCOAPODS: 0.39.0
