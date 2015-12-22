@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UIDeviceIdentifier"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "UIDeviceHardware is a class which allows querying of the current users device, and returns a human formatted string."
   s.homepage     = "https://github.com/squarefrog/UIDeviceIdentifier"
   s.license      = 'MIT'
@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source_files = 'Classes', 'UIDeviceIdentifier/**/*.{h,m}'
   s.public_header_files = 'UIDeviceIdentifier/**/*.h'
-  s.requires_arc = false
+  s.requires_arc = true
 end
 

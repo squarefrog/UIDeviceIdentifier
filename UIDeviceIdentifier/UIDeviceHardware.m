@@ -26,7 +26,11 @@
 {
     NSString *platform = [self platform];
 
-    NSDictionary *platformStrings = @{
+    static const NSDictionary *platformStrings;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        platformStrings = @
+        {
 #if !defined(TARGET_OS_IOS) || TARGET_OS_IOS
             @"iPhone1,1": @"iPhone 1G",
             @"iPhone1,2": @"iPhone 3G",
@@ -87,7 +91,8 @@
             @"i386": @"Simulator",
             @"x86_64": @"Simulator",
 #endif
-    };
+        };
+    });
 
     return platformStrings[platform] ?: platform;
 }
