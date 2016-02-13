@@ -4,7 +4,7 @@ UIDeviceHardware is a class originally created in a [gist](https://gist.github.c
 It is written as a class method, to allow use without direct instantiation.
 
 ## Usage
-To use this class, copy the class header files, or include the class in your Cocoapods Podfile. Then when you are ready to query the device, simply import the header file and use:
+To use this class, copy the class header files, or include the class in your CocoaPods Podfile. Then when you are ready to query the device, simply import the header file and use:
 
 ### Podfile inclusion
 
