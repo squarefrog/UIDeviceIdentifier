@@ -15,7 +15,7 @@ pod 'UIDeviceIdentifier', :git => 'https://github.com/squarefrog/UIDeviceIdentif
 ### Code usage
 
 ```objective-c
-#import <UIDeviceIdentifier/UIDeviceHardware.h>
+# import <UIDeviceIdentifier/UIDeviceHardware.h>
 
 @implementation MyClass
 
