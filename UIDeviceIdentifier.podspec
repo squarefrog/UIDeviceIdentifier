@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.authors      = [ "Paul Williamson",  "Jaybles" ]
   s.source       = { :git => "https://github.com/squarefrog/UIDeviceIdentifier.git", :tag => s.version.to_s }
-  s.platform     = :ios, :tvos
+  s.platforms     = { :ios => nil, :tvos => nil }
   s.source_files = 'Classes', 'UIDeviceIdentifier/**/*.{h,m}'
   s.public_header_files = 'UIDeviceIdentifier/**/*.h'
   s.requires_arc = false
