@@ -86,6 +86,12 @@
             @"iPad6,4": @"iPad Pro 9.7-inch (WiFi/Cellular)",
             @"iPad6,7": @"iPad Pro 12.9-inch (WiFi)",
             @"iPad6,8": @"iPad Pro 12.9-inch (WiFi/Cellular)",
+            @"iPad6,11": @"iPad 5 (WiFi)",
+            @"iPad6,12": @"iPad 5 (WiFi/Cellular)",
+            @"iPad7,1": @"iPad Pro 12.9-inch 2nd-gen (WiFi)",
+            @"iPad7,2": @"iPad Pro 12.9-inch 2nd-gen (WiFi/Cellular)",
+            @"iPad7,3": @"iPad Pro 10.5-inch (WiFi)",
+            @"iPad7,4": @"iPad Pro 10.5-inch (WiFi/Cellular)",
 #endif
 #if TARGET_OS_TV
             @"AppleTV5,3": @"Apple TV 4G",
