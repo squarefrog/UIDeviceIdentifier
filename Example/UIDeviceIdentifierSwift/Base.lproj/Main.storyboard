@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIDeviceIdentifierSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aXz-6g-HQf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia3-ny-6RH">
+                                <rect key="frame" x="0.0" y="70" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja3-PS-iz9">
+                                <rect key="frame" x="0.0" y="116" width="600" height="30"/>
+                                <state key="normal" title="Get Platform"/>
+                                <connections>
+                                    <action selector="GetPlatform:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ior-WX-Lsh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform String" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHj-il-G8L">
+                                <rect key="frame" x="0.0" y="196" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform String Simple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgO-SE-DwX">
+                                <rect key="frame" x="0.0" y="322" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEp-d0-ktz">
+                                <rect key="frame" x="0.0" y="368" width="600" height="30"/>
+                                <state key="normal" title="Get Platform String Simple"/>
+                                <connections>
+                                    <action selector="GetPlatformStringSimple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nj9-vE-9WG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-WB-OAi">
+                                <rect key="frame" x="0.0" y="242" width="600" height="30"/>
+                                <state key="normal" title="Get Platform String"/>
+                                <connections>
+                                    <action selector="GetPlatformString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIf-hd-fLH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ia3-ny-6RH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="1QU-KY-cVu"/>
+                            <constraint firstItem="bgO-SE-DwX" firstAttribute="trailing" secondItem="evI-WB-OAi" secondAttribute="trailing" id="3kH-DC-K7K"/>
+                            <constraint firstItem="yEp-d0-ktz" firstAttribute="top" secondItem="bgO-SE-DwX" secondAttribute="bottom" constant="25" id="6hP-e8-3rm"/>
+                            <constraint firstAttribute="trailing" secondItem="uHj-il-G8L" secondAttribute="trailing" id="8xO-Je-pSM"/>
+                            <constraint firstItem="ja3-PS-iz9" firstAttribute="top" secondItem="ia3-ny-6RH" secondAttribute="bottom" constant="25" id="BNW-xw-h2M"/>
+                            <constraint firstItem="evI-WB-OAi" firstAttribute="leading" secondItem="bgO-SE-DwX" secondAttribute="leading" id="IEL-Id-QWV"/>
+                            <constraint firstItem="uHj-il-G8L" firstAttribute="trailing" secondItem="ja3-PS-iz9" secondAttribute="trailing" id="JzO-o9-nAS"/>
+                            <constraint firstItem="ia3-ny-6RH" firstAttribute="trailing" secondItem="ja3-PS-iz9" secondAttribute="trailing" id="Maz-Zq-uAV"/>
+                            <constraint firstItem="bgO-SE-DwX" firstAttribute="trailing" secondItem="yEp-d0-ktz" secondAttribute="trailing" id="P7O-S4-BeV"/>
+                            <constraint firstItem="evI-WB-OAi" firstAttribute="trailing" secondItem="uHj-il-G8L" secondAttribute="trailing" id="X1l-eT-pXF"/>
+                            <constraint firstItem="uHj-il-G8L" firstAttribute="leading" secondItem="ja3-PS-iz9" secondAttribute="leading" id="XPD-ho-R7K"/>
+                            <constraint firstItem="ja3-PS-iz9" firstAttribute="leading" secondItem="aXz-6g-HQf" secondAttribute="leading" id="f1t-p3-Tai"/>
+                            <constraint firstItem="evI-WB-OAi" firstAttribute="top" secondItem="uHj-il-G8L" secondAttribute="bottom" constant="25" id="gaI-gO-2Ik"/>
+                            <constraint firstItem="bgO-SE-DwX" firstAttribute="leading" secondItem="yEp-d0-ktz" secondAttribute="leading" id="kJF-KX-oy5"/>
+                            <constraint firstItem="uHj-il-G8L" firstAttribute="leading" secondItem="evI-WB-OAi" secondAttribute="leading" id="mca-kJ-zvS"/>
+                            <constraint firstItem="uHj-il-G8L" firstAttribute="top" secondItem="ja3-PS-iz9" secondAttribute="bottom" constant="50" id="u0U-UU-Hq0"/>
+                            <constraint firstItem="ia3-ny-6RH" firstAttribute="leading" secondItem="ja3-PS-iz9" secondAttribute="leading" id="wHT-dy-DJO"/>
+                            <constraint firstItem="bgO-SE-DwX" firstAttribute="top" secondItem="evI-WB-OAi" secondAttribute="bottom" constant="50" id="zr2-CK-fcg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PlatformLabel" destination="ia3-ny-6RH" id="etf-1m-kfO"/>
+                        <outlet property="PlatformStringLabel" destination="uHj-il-G8L" id="P1Q-d7-R41"/>
+                        <outlet property="PlatformStringSimpleLabel" destination="bgO-SE-DwX" id="Mwx-YJ-Ieg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

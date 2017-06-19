@@ -1,0 +1,11 @@
+# OS X
+.DS_Store
+
+# Xcode
+xcuserdata/
+
+# Appcode
+.idea
+
+# Cocoapod
+Pods/

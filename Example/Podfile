@@ -1,0 +1,14 @@
+workspace 'UIDeviceIdentifier.xcworkspace'
+xcodeproj 'UIDeviceIdentifierObjC.xcodeproj'
+xcodeproj 'UIDeviceIdentifierSwift.xcodeproj'
+
+target 'UIDeviceIdentifierObjC', :exclusive => true do
+  pod "UIDeviceIdentifier", :path => "../"
+  xcodeproj 'UIDeviceIdentifierObjC.xcodeproj'
+end
+
+target 'UIDeviceIdentifierSwift', :exclusive => true do
+  use_frameworks!
+  pod "UIDeviceIdentifier", :path => "../"
+  xcodeproj 'UIDeviceIdentifierSwift.xcodeproj'
+end

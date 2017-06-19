@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Itt-PH-inc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPR-9A-hgY">
+                                <rect key="frame" x="0.0" y="70" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-Qz-KnO">
+                                <rect key="frame" x="0.0" y="116" width="600" height="30"/>
+                                <state key="normal" title="Get Platform"/>
+                                <connections>
+                                    <action selector="getPlatform:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kyy-s8-P2u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform String" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVB-jU-hI2">
+                                <rect key="frame" x="0.0" y="196" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform String Simple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxd-Kq-4XX">
+                                <rect key="frame" x="0.0" y="322" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK0-70-WWN">
+                                <rect key="frame" x="0.0" y="368" width="600" height="30"/>
+                                <state key="normal" title="Get Platform String Simple"/>
+                                <connections>
+                                    <action selector="getPlatformStringSimple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7BR-mJ-Edx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-Fa-p4f">
+                                <rect key="frame" x="0.0" y="242" width="600" height="30"/>
+                                <state key="normal" title="Get Platform String"/>
+                                <connections>
+                                    <action selector="getPlatformString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nbr-91-Lin"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8UW-Qz-KnO" firstAttribute="trailing" secondItem="mVB-jU-hI2" secondAttribute="trailing" id="7on-8V-l2I"/>
+                            <constraint firstItem="mVB-jU-hI2" firstAttribute="top" secondItem="8UW-Qz-KnO" secondAttribute="bottom" constant="50" id="B6i-va-3D3"/>
+                            <constraint firstItem="hPR-9A-hgY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="BcP-dV-Idl"/>
+                            <constraint firstItem="mVB-jU-hI2" firstAttribute="trailing" secondItem="4Uc-Fa-p4f" secondAttribute="trailing" id="GVx-P4-ZLr"/>
+                            <constraint firstItem="yxd-Kq-4XX" firstAttribute="top" secondItem="4Uc-Fa-p4f" secondAttribute="bottom" constant="50" id="Ml8-ub-9AH"/>
+                            <constraint firstItem="yxd-Kq-4XX" firstAttribute="trailing" secondItem="EK0-70-WWN" secondAttribute="trailing" id="Ruk-hp-LDc"/>
+                            <constraint firstItem="4Uc-Fa-p4f" firstAttribute="leading" secondItem="mVB-jU-hI2" secondAttribute="leading" id="TbP-kC-vAt"/>
+                            <constraint firstItem="EK0-70-WWN" firstAttribute="top" secondItem="yxd-Kq-4XX" secondAttribute="bottom" constant="25" id="VPu-ik-KoP"/>
+                            <constraint firstItem="4Uc-Fa-p4f" firstAttribute="leading" secondItem="Itt-PH-inc" secondAttribute="leading" id="Vef-TR-gfM"/>
+                            <constraint firstAttribute="trailing" secondItem="8UW-Qz-KnO" secondAttribute="trailing" id="ZUn-ax-sHh"/>
+                            <constraint firstItem="yxd-Kq-4XX" firstAttribute="leading" secondItem="EK0-70-WWN" secondAttribute="leading" id="afl-yh-1wW"/>
+                            <constraint firstItem="yxd-Kq-4XX" firstAttribute="leading" secondItem="4Uc-Fa-p4f" secondAttribute="leading" id="bgt-tn-Fg3"/>
+                            <constraint firstItem="4Uc-Fa-p4f" firstAttribute="trailing" secondItem="yxd-Kq-4XX" secondAttribute="trailing" id="e1q-IM-Rgq"/>
+                            <constraint firstItem="hPR-9A-hgY" firstAttribute="trailing" secondItem="8UW-Qz-KnO" secondAttribute="trailing" id="jhV-Se-gf1"/>
+                            <constraint firstItem="4Uc-Fa-p4f" firstAttribute="top" secondItem="mVB-jU-hI2" secondAttribute="bottom" constant="25" id="krf-W0-4MO"/>
+                            <constraint firstItem="8UW-Qz-KnO" firstAttribute="leading" secondItem="mVB-jU-hI2" secondAttribute="leading" id="rgU-yf-8Rx"/>
+                            <constraint firstItem="8UW-Qz-KnO" firstAttribute="top" secondItem="hPR-9A-hgY" secondAttribute="bottom" constant="25" id="rna-2h-0OC"/>
+                            <constraint firstItem="hPR-9A-hgY" firstAttribute="leading" secondItem="8UW-Qz-KnO" secondAttribute="leading" id="yIY-uD-JtQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="platformLabel" destination="hPR-9A-hgY" id="4My-4t-4fa"/>
+                        <outlet property="platformStringLabel" destination="mVB-jU-hI2" id="lcP-9n-Bu3"/>
+                        <outlet property="platformStringSimpleLabel" destination="yxd-Kq-4XX" id="9c7-Zm-ThW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
