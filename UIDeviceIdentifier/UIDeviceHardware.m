@@ -84,6 +84,7 @@
             @"iPad4,6": @"iPad Mini Retina (China)",
             @"iPad4,7": @"iPad Mini 3 (WiFi)",
             @"iPad4,8": @"iPad Mini 3 (WiFi/Cellular)",
+            @"iPad4,9": @"iPad Mini 3 (China)",
             @"iPad5,1": @"iPad Mini 4 (WiFi)",
             @"iPad5,2": @"iPad Mini 4 (WiFi/Cellular)",
             @"iPad5,3": @"iPad Air 2 (WiFi)",
@@ -98,6 +99,8 @@
             @"iPad7,2": @"iPad Pro 12.9-inch 2nd-gen (WiFi/Cellular)",
             @"iPad7,3": @"iPad Pro 10.5-inch (WiFi)",
             @"iPad7,4": @"iPad Pro 10.5-inch (WiFi/Cellular)",
+            @"iPad7,5": @"iPad 6 (WiFi)",
+            @"iPad7,6": @"iPad 6 (WiFi/Cellular)",
 #endif
 #if TARGET_OS_TV
             @"AppleTV5,3": @"Apple TV 4G",
