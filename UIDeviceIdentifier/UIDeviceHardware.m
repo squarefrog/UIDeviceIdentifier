@@ -45,6 +45,7 @@
             @"iPhone7,2": @"iPhone 6",
             @"iPhone8,1": @"iPhone 6s",
             @"iPhone8,2": @"iPhone 6s Plus",
+            @"iPhone8,4": @"iPhone SE",
             @"iPhone9,4": @"iPhone 7 Plus",
             @"iPhone9,2": @"iPhone 7 Plus",
             @"iPhone9,3": @"iPhone 7",
@@ -55,9 +56,9 @@
             @"iPhone10,5" : @"iPhone 8 Plus",
             @"iPhone10,3" : @"iPhone X",
             @"iPhone10,6" : @"iPhone X",
-            @"iPhone8,4": @"iPhone SE",
             @"iPhone11,2" : @"iPhone XS",
             @"iPhone11,4" : @"iPhone XS Max",
+            @"iPhone11,6" : @"iPhone XS Max",
             @"iPhone11,8" : @"iPhone XR",
             @"iPod1,1": @"iPod Touch 1G",
             @"iPod2,1": @"iPod Touch 2G",
@@ -107,6 +108,7 @@
 #endif
 #if TARGET_OS_TV
             @"AppleTV5,3": @"Apple TV 4G",
+            @"AppleTV6,2": @"Apple TV 4K",
 #endif
 #if !defined(TARGET_OS_SIMULATOR) || TARGET_OS_SIMULATOR
             @"i386": @"Simulator",
