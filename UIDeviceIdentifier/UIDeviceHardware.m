@@ -63,6 +63,7 @@
                                   @"iPod4,1": @"iPod Touch 4G",
                                   @"iPod5,1": @"iPod Touch 5G",
                                   @"iPod7,1": @"iPod Touch 6G",
+								  @"iPod9,1": @"iPod Touch 7G",
                                   @"iPad1,1": @"iPad 1",
                                   @"iPad2,1": @"iPad 2 (WiFi)",
                                   @"iPad2,2": @"iPad 2 (GSM)",
