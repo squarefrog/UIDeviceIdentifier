@@ -33,6 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *) platformStringSimple;
 
+
+/**
+ * Returns the platformString for the specified device type
+ * @return the platformString for the specified device type
+ */
++ (NSString *) platformStringForType:(NSString *)type;
+
 @end
 
 #ifdef NS_ASSUME_NONNULL_END
