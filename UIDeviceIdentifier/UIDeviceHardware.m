@@ -130,10 +130,7 @@
 
 + (NSString *) platformString
 {
-    NSString *platform = [self platform];
-
-    NSDictionary *platformStrings = [self platformDefinitions];
-    return platformStrings[platform] ?: platform;
+    return [self platformStringForType: [self platform]];
 }
 
 + (NSString *) platformStringSimple
