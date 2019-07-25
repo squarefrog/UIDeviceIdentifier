@@ -16,27 +16,28 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIDeviceHardware : NSObject 
 
 /**
- * The model name of the device. For example, `iPhone5,3`, `iPad3,1`, `iPod5,1`
- * @return The current devices model name as a string
+ * The model name of the device. For example, `iPhone5,3`, `iPad3,1`, `iPod5,1`.
+ * @return The current devices model name as a string.
  */
 + (NSString *) platform;
 
 /**
- * The human readable platform string. For example, `iPhone 5C (GSM)`, `iPad 3 (WiFi)`, `iPod Touch 5G`.
- * @return The current devices platform string in a human readable format
+ * The full human readable platform string. For example, `iPhone 5C (GSM)`, `iPad 3 (WiFi)`, `iPod Touch 5G`.
+ * @return The current devices platform string in a human readable format.
  */
 + (NSString *) platformString;
 
 /**
- * The human readable platform string Simple. For example, `iPhone 5C`, `iPad 3`, `iPod Touch 5G`.
- * @return The current devices platform string in a human readable format
+ * The simplified human readable platform string. For example, `iPhone 5C`, `iPad 3`, `iPod Touch 5G`.
+ * @return The current devices platform string in a simplified human readable format.
  */
 + (NSString *) platformStringSimple;
 
 
 /**
- * Returns the platformString for the specified device type
- * @return the platformString for the specified device type
+ * Get a platform string for a specified type. For example:
+ *     `[UIDeviceHardware platformStringForType:@"iPhone5,3"]; // Returns "iPhone 5C (GSM)"
+ * @return The platform string for the specified device type.
  */
 + (NSString *) platformStringForType:(NSString *)type;
 
