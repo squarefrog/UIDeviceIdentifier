@@ -22,11 +22,8 @@
     return platform;
 }
 
-+ (NSString *) platformString
-{
-    NSString *platform = [self platform];
-
-    NSDictionary *platformStrings = @{
++ (NSDictionary *) platformDefinitions {
+    NSDictionary *definitions = @{
 #if !defined(TARGET_OS_IOS) || TARGET_OS_IOS
             @"iPhone1,1": @"iPhone 1G",
             @"iPhone1,2": @"iPhone 3G",
@@ -128,7 +125,14 @@
             @"x86_64": @"Simulator",
 #endif
     };
+    return definitions;
+}
 
++ (NSString *) platformString
+{
+    NSString *platform = [self platform];
+
+    NSDictionary *platformStrings = [self platformDefinitions];
     return platformStrings[platform] ?: platform;
 }
 
@@ -141,6 +145,12 @@
         return [platformString substringToIndex:range.location - 1];
     
     return platformString;
+}
+
++ (NSString *) platformStringForType:(NSString *)type
+{
+    NSDictionary *platformStrings = [self platformDefinitions];
+    return platformStrings[type] ?: type;
 }
 
 @end
