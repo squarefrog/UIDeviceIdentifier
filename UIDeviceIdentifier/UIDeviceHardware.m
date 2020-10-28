@@ -61,6 +61,10 @@
             @"iPhone12,3" : @"iPhone 11 Pro",
             @"iPhone12,5" : @"iPhone 11 Pro Max",
             @"iPhone12,8" : @"iPhone SE 2nd-gen",
+            @"iPhone13,1" : @"iPhone 12 mini",
+            @"iPhone13,2" : @"iPhone 12",
+            @"iPhone13,3" : @"iPhone 12 Pro",
+            @"iPhone13,4" : @"iPhone 12 Pro Max",
             @"iPod1,1": @"iPod Touch 1G",
             @"iPod2,1": @"iPod Touch 2G",
             @"iPod3,1": @"iPod Touch 3G",
@@ -125,6 +129,10 @@
             @"iPad11,2": @"iPad Mini 5 (WiFi/Cellular)",
             @"iPad11,3": @"iPad Air 3 (WiFi)",
             @"iPad11,4": @"iPad Air 3 (WiFi/Cellular)",
+            @"iPad11,6": @"iPad 8 (WiFi)",
+            @"iPad11,7": @"iPad 8 (WiFi/Cellular)",
+            @"iPad13,1": @"iPad Air 4 (WiFi)",
+            @"iPad13,2": @"iPad Air 4 (WiFi/Cellular)",
 #endif
 #if TARGET_OS_TV
             @"AppleTV5,3": @"Apple TV 4G",
