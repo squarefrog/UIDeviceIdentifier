@@ -60,5 +60,5 @@ Copy `UIDeviceHardware.{h/m}` into your project. Then just import the header:
 #import "UIDeviceHardware.h"
 ```
 
-## License
-UIDeviceHardware is available under the MIT license. See the LICENSE file for more info.
+## Licence
+UIDeviceHardware is available under the MIT licence. See the LICENCE file for more info.
