@@ -3,6 +3,10 @@ UIDeviceHardware is a class originally created in a [gist](https://gist.github.c
 
 It is written as a class method, to allow use without direct instantiation.
 
+## ⚠️ Note
+
+I don't use this helper much anymore, so I'm not keeping up to date with device models. While I welcome Pull Requests to update the model, I'd recommend moving over to something more modern, like [DeviceKit](https://github.com/devicekit/DeviceKit).
+
 ## Usage
 
 ```objective-c
