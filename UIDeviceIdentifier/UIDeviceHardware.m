@@ -154,8 +154,14 @@
             @"iPad13,11": @"iPad Pro 12.9-inch 5th-gen (WiFi/Cellular)",
             @"iPad13,16": @"iPad Air 5th-gen (WiFi)",
             @"iPad13,17": @"iPad Air 5th-gen (WiFi/Cellular)",
+            @"iPad13,18": @"iPad 10th-gen (WiFi)",
+            @"iPad13,19": @"iPad 10th-gen (WiFi/Cellular)",
             @"iPad14,1": @"iPad mini 6th-gen (WiFi)",
             @"iPad14,2": @"iPad mini 6th-gen (WiFi/Cellular)",
+            @"iPad14,3": @"iPad Pro 11-inch 4th-gen (WiFi)",
+            @"iPad14,4": @"iPad Pro 11-inch 4th-gen (WiFi/Cellular)",
+            @"iPad14,5": @"iPad Pro 12.9-inch 6th-gen (WiFi)",
+            @"iPad14,6": @"iPad Pro 12.9-inch 6th-gen (WiFi/Cellular)",
 #endif
 #if TARGET_OS_TV
             @"AppleTV5,3": @"Apple TV 4G",
