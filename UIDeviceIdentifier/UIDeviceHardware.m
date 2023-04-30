@@ -169,6 +169,7 @@
 #endif
 #if !defined(TARGET_OS_SIMULATOR) || TARGET_OS_SIMULATOR
             @"i386": @"Simulator",
+            @"arm64": @"Simulator",
             @"x86_64": @"Simulator",
 #endif
     };
